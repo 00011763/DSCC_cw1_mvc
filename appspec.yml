@@ -4,11 +4,10 @@ files:
   - source: \app
     destination: c:\inetpub\wwwroot
 hooks:
-  BeforeStart:
+  BeforeInstall:
     - location: \deploy-scripts\publish.bat
       timeout: 120
       runas: Administrator
-  BeforeInstall:
     - location: \deploy-scripts\before_install.bat
       timeout: 120
       runas: Administrator
